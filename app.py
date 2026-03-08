@@ -190,7 +190,7 @@ class App(tk.Tk):
         for row in self.rows:
             self.tree.insert("", "end", values=[row[c] for c in COLUMNS])
 
-        self.status_var.set(f"Found {len(self.rows)} results for "{query}"")
+        self.status_var.set(f"Found {len(self.rows)} results for '{query}'")
 
     def _on_export(self):
         if not self.rows:
